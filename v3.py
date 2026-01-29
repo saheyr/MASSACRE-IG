@@ -1149,7 +1149,8 @@ def main():
     entrada = sys.argv[1]
     resultado = obtener_info_instagram(entrada)
 
-    if "error" in resultado:
+    if resultado and "error" in resultado:
+
         print(resultado["error"])
         return
 
